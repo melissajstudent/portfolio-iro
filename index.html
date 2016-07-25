@@ -4,13 +4,14 @@ layout: default
 
 <div class="home">
   {% if site.theme.header_text %}
-  <div class="call-out" 
+  <center><img src="../img/Melissa_circle.png"></center>
+  <div class="call-out"
   style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
     {{ site.theme.header_text }}
   </div>
   {% endif %}
 
-  <div class="work">
+  <!-- <div class="work">
     <h2>My Work</h2>
     {% for project in site.portfolio limit:3 %}
         <li>
@@ -19,10 +20,10 @@ layout: default
           <p>{{ project.short-description }}</p>
         </li>
     {% endfor %}
-  </div>
+  </div> -->
 
   <div class="posts">
-    <h2>My Posts</h2>
+    <!-- <h2>My Posts</h2> -->
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
